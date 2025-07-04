@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gentle Lillies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #e6f0ea, #fef6f8);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(255,255,255,0.4);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #6d8c74;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin: 2rem 0 1rem;
+      color: #6d8c74;
+    }
+
+    .carousel-container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+      flex: 0 0 33.333%;
+      margin: 1rem;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .carousel-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      background-color: #c3d6cd;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+      background-color: #6d8c74;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem;
+    }
+
+    .cta button {
+      background-color: #6d8c74;
+      color: white;
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Ghibli bubbles */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      animation: float 20s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-100vh); opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+      .card { flex: 0 0 100%; }
+      .carousel-buttons { flex-wrap: wrap; }
+    }
+
+    /* WHY SECTION */
+    .why-section {
+      width: 90%;
+      max-width: 1000px;
+      margin: 3rem auto 2rem;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+      color: #333;
+    }
+
+    .why-section h2 {
+      font-size: 2.2rem;
+      color: #6d8c74;
+      margin-bottom: 1rem;
+    }
+
+    .why-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      background-color: #6d8c74;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 1.5rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .learn-more-btn:hover {
+      background-color: #5b7b66;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="aw.jpeg" alt="Logo">
+      <span style="font-size: 1.5rem; font-weight: bold; color: #6d8c74;">Gentle Lillies</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about-me.html">About Me</a>
+      <a href="services.html">Services</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- WHY I DO THIS SECTION -->
+  <section class="why-section">
+    <div class="why-content">
+      <h2>Coaching</h2>
+      <p>
+        Life can feel heavy when you're burnt out, overwhelmed, or unsure of how to move forward.
+        My mission is to gently guide girls and women through those moments, helping them reconnect with their inner clarity, rediscover their rhythm, and rebuild the confidence to grow and thrive.
+        
+        Coaching with me isn't about quick fixes; it's about nurturing sustainable change and uncovering the strength they've always carried within.
+      </p>
+      <a href="about-me.html" class="learn-more-btn">Learn more about me</a>
+    </div>
+  </section>
+
+  <h1>What clients say</h1>
+  <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <div class="card">“Irem finds the right words to show how well she understood my emotions when I can not do so myself. She brings up great ideas as if she reads my mind , she finds solutions tailor made for me and I am extremely grateful for all of it. I can already see big changes in my life thanks to her.” – Lana</div>
+      <div class="card">“She makes me feel understood and able to explore and understand myself more. I also like the fact that she makes me explain, understand and realize the problems I face by myself in which to me feels like a huge step to self improvement.” – Maira</div>
+      <div class="card">“Irem listens to us, understands us and shows interest in our stories. She allows us to fully express ourselves through questions, stories, feeling expression. I feel safe talking about my issues. This coaching call made me feel relevant, heard. I am beyond grateful. Now, I feel capable of achieving my goals.” – Sara</div>
+      <div class="card">“She is a good listener and provides a good environment to be yourself and understand yourself more. Also rather than help or give me a solution she makes me find the solution myself in which to me is a good token rather than be there and depend everything from her. Basically after sometime I get to start to depend on myself which is growth to me.” – Amna</div>
+      <div class="card">“Irem makes you absolutely comfortable and you feel it's a safe space and has the intention of helping you grow. She is patient and has no judgement what's so ever. She is absolutely Amazing.” – Noor</div>
+      <div class="card"></div>
+    </div>
+    <div class="carousel-buttons">
+      <button onclick="moveCarousel(-1)">&#8592;</button>
+      <button onclick="moveCarousel(1)">&#8594;</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <div class="cta">
+    <button onclick="window.open('https://calendly.com/irr3mm', '_blank')">
+      Book Your Free 30-Minute Discovery Call
+    </button>
+  </div>
+
+  <!-- Ghibli bubbles -->
+  <div class="bubble" style="width: 40px; height: 40px; left: 10%; animation-delay: 0s;"></div>
+  <div class="bubble" style="width: 60px; height: 60px; left: 30%; animation-delay: 5s;"></div>
+  <div class="bubble" style="width: 30px; height: 30px; left: 50%; animation-delay: 2s;"></div>
+  <div class="bubble" style="width: 50px; height: 50px; left: 70%; animation-delay: 3s;"></div>
+  <div class="bubble" style="width: 20px; height: 20px; left: 90%; animation-delay: 7s;"></div>
+
+  <script>
+    let position = 0;
+    const carousel = document.getElementById('carousel');
+    const cards = document.querySelectorAll('.card');
+    const totalSlides = cards.length;
+    const visibleCards = 3;
+    const dotsContainer = document.getElementById('dots');
+    const totalDots = totalSlides - visibleCards + 1;
+
+    function renderDots() {
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === position) dot.classList.add('active');
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function moveCarousel(direction) {
+      position += direction;
+      if (position < 0) position = 0;
+      if (position >= totalDots) position = totalDots - 1;
+      carousel.style.transform = `translateX(-${position * (100 / visibleCards)}%)`;
+      renderDots();
+    }
+
+    renderDots();
+  </script>
+
+  <section class="blog-section">
+  	
+  </section>
+</body>
+</html>

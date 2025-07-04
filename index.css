@@ -1,0 +1,38 @@
+body {
+    background-color: powderblue;
+}
+
+h1  {
+    color: blue;
+}
+
+p   {
+    color: red;
+}
+
+.goldie-image {
+    width: 500px;
+    /* height: 100px; */
+    /* background-color: gold; */
+}
+
+.main-text{
+    /* height: 400px; height weg? wordt aangepast aan de tekst automatically*/
+    width: 500px;
+    background-color: cadetblue;
+    margin: 100px; /* randje om blok/tekst */
+    padding: 10px; /* randje binnen blok/tekst */
+}
+
+/* ctrl+/ */
+
+.container{
+    display: flex;
+    background-color: DodgerBlue;
+    padding: 10px;
+    /* bij laatste/buitenste div centreren */
+    justify-content: center;
+    align-items: center;
+}
+
+
